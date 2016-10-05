@@ -1,0 +1,20 @@
+<h2> View All Trainers</h2>
+
+<ul>
+  <% @trainers.each do |trainer| %>
+  <div id= "delpair">
+  <li><a href="<%= "/trainers/" + trainer.id.to_s %>"> <%= trainer.name %></a></li>
+
+<form action="/trainers/<%= trainer.id %>" method="post">
+  <input type="hidden" name="_method" value="delete">
+  <input class="button-delete" type="submit" value="Delete!">
+</form>
+</div>
+
+  <% end %>
+</ul>
+  <button id="editbutton2" type="button"><a href='/trainers/new'>Add a NEW trainer</a></button>
+
+  <form action="/pokemons/reseed" method="get">
+  <input id="editbutton2" type="submit" value="Reseed Data">
+ </form>

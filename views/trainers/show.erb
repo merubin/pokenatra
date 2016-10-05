@@ -1,0 +1,9 @@
+<h1><%= @trainers.name %></h1>
+<div class="trainers">
+  <p>trainer Name: <%= @trainers.name %></p>
+  <p>trainer Level: <%= @trainers.level %></p>
+  <img src="<%= @trainers.img_url  %>" alt "<%= @trainers.name %>" style="width:304px;height:228px;">
+</div>
+<button id="editbutton2" type="button"><a href='/trainers/<%= @trainers.id %>/edit'>Edit This trainer</a></button>
+
+<h2><a href="/trainers"> Return to All trainers</a></h2>
