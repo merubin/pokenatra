@@ -1,0 +1,17 @@
+<form action="/pokemons/<%= @pokemons.id %>" method="post">
+  <input type="hidden" name="_method" value="put">
+
+  <label for="pokemon[name]">Pokemon Name:</label>
+  <input name="pokemon[name]" value="<%= @pokemons.name %>">
+
+  <label for="pokemon[cp]">Combat Power:</label>
+  <input name="pokemon[cp]" value="<%= @pokemons.cp %>">
+
+  <label for="pokemon[poke_type]">Type:</label>
+  <input name="pokemon[poke_type]" value="<%= @pokemons.poke_type %>">
+
+  <label for="pokemon[img_url]">Image URL:</label>
+  <input name="pokemon[img_url]" value="<%= @pokemons.img_url %>">
+
+  <input type="submit" value="Update">
+</form>

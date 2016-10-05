@@ -1,0 +1,8 @@
+<h2> View All Pokemons</h2>
+
+<ul>
+  <% @pokemons.each do |pokemon| %>
+  <li><a href="<%= "/pokemons/" + pokemon.id.to_s %>"> <%= pokemon.name %></a></li>
+  <% end %>
+</ul>
+  <button id="editbutton2" type="button"><a href='/pokemons/new'>Add a NEW Pokemon</a></button>

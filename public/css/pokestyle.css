@@ -1,6 +1,4 @@
-/*
 
-Uncomment for sick pokestyle
 
 @font-face {
   font-family: "Pokemon";
@@ -25,6 +23,17 @@ body {
   font-size: 200%;
 }
 
+#editbutton2 {
+  background-color: #4CAF50; /* Green */
+  width:100%;
+  height:100%;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 24px;
+}
 a:hover {
   padding: 20px;
   animation: pulse 1s infinite;
@@ -70,4 +79,4 @@ a:hover {
     text-shadow: 4px 4px 3px rgba(255, 0, 0, .3);
     background-color: rgba(0, 0, 0, .1);
   }
-}*/
+}

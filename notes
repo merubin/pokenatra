@@ -1,0 +1,6 @@
+create database
+createdb poke_db
+psql -d poke_db < db/schema.sql
+
+create the data
+ruby db/seeds.rb

@@ -1,0 +1,10 @@
+<h1><%= @pokemons.name %></h1>
+<div class="pokemons">
+  <p>Pokemon Name: <%= @pokemons.name %></p>
+  <p>Pokemon Combat Power: <%= @pokemons.cp %></p>
+  <p>Pokemon Type: <%= @pokemons.poke_type  %></p>
+  <img src="<%= @pokemons.img_url  %>" alt "<%= @pokemons.name %>" style="width:304px;height:228px;">
+</div>
+<button id="editbutton2" type="button"><a href='/pokemons/<%= @pokemons.id %>/edit'>Edit This Pokemon</a></button>
+
+<h2><a href="/pokemons"> Return to All Pokemons</a></h2>
