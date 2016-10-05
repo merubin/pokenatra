@@ -2,7 +2,19 @@
 
 <ul>
   <% @pokemons.each do |pokemon| %>
+  <div id= "delpair">
   <li><a href="<%= "/pokemons/" + pokemon.id.to_s %>"> <%= pokemon.name %></a></li>
+
+<form action="/pokemons/<%= pokemon.id %>" method="post">
+  <input type="hidden" name="_method" value="delete">
+  <input class="button-delete" type="submit" value="Delete!">
+</form>
+</div>
+
   <% end %>
 </ul>
   <button id="editbutton2" type="button"><a href='/pokemons/new'>Add a NEW Pokemon</a></button>
+
+  <form action="/pokemons/reseed" method="get">
+  <input id="editbutton2" type="submit" value="Reseed Data">
+ </form>
